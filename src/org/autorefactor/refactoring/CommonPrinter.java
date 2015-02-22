@@ -3,7 +3,7 @@ package org.autorefactor.refactoring;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Test {
+public class CommonPrinter {
 
     static boolean printIfCommon(List<String> names1, List<String> names2, boolean checkNames, boolean checkAdditional) {
         if (checkNames) {
