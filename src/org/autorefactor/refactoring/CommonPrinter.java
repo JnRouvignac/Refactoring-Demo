@@ -1,24 +1,13 @@
 package org.autorefactor.refactoring;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class CommonPrinter {
 
-    static boolean printIfCommon(List<String> names1, List<String> names2, boolean checkNames, boolean checkAdditional) {
-        if (checkNames) {
-            if (containsAnyIgnoreCase(names1, names2)) {
-                System.out.println("Common name exist");
-                return true;
-            }
-        } else if (checkAdditional) {
-            final List<String> copyNames = new ArrayList<String>(names2);
-            if (containsAnyIgnoreCase(names1, copyNames)) {
-                System.out.println("Same name exist");
-            } else {
-                System.out.println("No similar name exist");
-                return false;
-            }
+    static boolean printIfCommon(List<String> names1, List<String> names2) {
+        if (containsAnyIgnoreCase(names1, names2)) {
+            System.out.println("Common name exist");
+            return true;
         }
         System.out.println("No common name");
         return false;
