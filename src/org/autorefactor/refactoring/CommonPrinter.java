@@ -11,15 +11,13 @@ public class CommonPrinter {
                 System.out.println("Common name exist");
                 return true;
             }
-        } else {
-            if (checkAdditional) {
-                final List<String> copyNames = new ArrayList<String>(names2);
-                if (containsAnyIgnoreCase(names1, copyNames)) {
-                    System.out.println("Same name exist");
-                } else {
-                    System.out.println("No similar name exist");
-                    return false;
-                }
+        } else if (checkAdditional) {
+            final List<String> copyNames = new ArrayList<String>(names2);
+            if (containsAnyIgnoreCase(names1, copyNames)) {
+                System.out.println("Same name exist");
+            } else {
+                System.out.println("No similar name exist");
+                return false;
             }
         }
         System.out.println("No common name");
