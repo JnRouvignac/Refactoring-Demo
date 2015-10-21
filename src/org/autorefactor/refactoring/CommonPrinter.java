@@ -14,9 +14,7 @@ public class CommonPrinter {
         } else {
             if (checkAdditional) {
                 final List<String> copyNames = new ArrayList<String>();
-                for (String name : names2) {
-                    copyNames.add(name);
-                }
+                copyNames.addAll(names2);
                 if (containsAnyIgnoreCase(names1, copyNames)) {
                     System.out.println("Same name exist");
                 } else {
