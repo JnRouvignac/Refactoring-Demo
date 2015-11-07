@@ -3,6 +3,7 @@
 Refactoring demo used for:
 - AlpesJUG, 24th February 2015
 - Soft-Shake, 22nd October 2015
+- EclipseCon Europe, 4th November 2015
 
 ## Instructions
 
