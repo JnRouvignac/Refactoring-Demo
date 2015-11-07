@@ -8,6 +8,7 @@ Refactoring demo used for:
 ## Instructions
 
 A contrived but simple example showing how refactorings can help simplify code.
+
 Try to refactor, starting from the `CommonPrinter.printIfCommon()` method.
 
 Deception is intended since legacy code is sometimes very deceptive!
